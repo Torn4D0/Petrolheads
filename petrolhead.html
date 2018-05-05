@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+        <title> The Petrolhead </title>
+        <!-- BOOTSTRAP LINKS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- LOCAL CSS LINK -->
+        <link rel="stylesheet" href="petrolheadStyle.css" type="text/css">
+       
+
+    
+    </head>
+    
+    <body>
+        
+    
+        
+        <div class="container-fluid" id="logoContainer"> <!-- Logo Container -->
+            <div class="row justify-content-center "> <img src="logoPlaceholder.svg" alt="LOGO" width="100px" height="100px"/> </div>  <!-- Logo Row -->
+        </div>
+        
+            <!-- HOME CONTAINER -->
+        <div class="container-fluid" id="home">
+            <div class="row justify-content-center" id="typewriterDiv">
+                <div class="typewriter">
+                    <h1 id="1h" class="cursorChange typeWriter visible">There is two types of people in the world.</h1>
+                    <h1 id="2h" class="cursorChange typeWriter invisible">As I was saying, there is two types</h1>
+                    <h1 id="3h" class="cursorChange typeWriter invisible">but only one that matters, and that is us</h1>
+                    <h1 id="4h" class="cursorChange typeWriter invisible">THE PETROLHEADS</h1>
+                    
+                
+                </div>
+            </div>
+            <div class="row circularHide">
+                <svg id="nonCarGuy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="370 27 10 400" width="200" height="200" version="1.0">
+    <g transform="translate(350 350)">
+<!--body-->
+        <path d="M0 -100 L0 0 L-30 75 M0 0 L30 75" fill="none" stroke="darkgray" stroke-width="7" >
+            <animate dur="1s" repeatCount="1" fill="freeze" attributeName="d" values="M0 100 L0 200 L-30 75 M0 200 L30 75" begin="9.2s"></animate>
+            <animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="0.1s" repeatCount="1" begin="9.2s"  fill="freeze"/>
+          
+        </path>
+<!--        right arm -->
+        <path d="M40 -25 L0 -70 L0 -25" fill="none" stroke="darkgray" stroke-width="7" >
+            <animate dur="0.5s" repeatCount="1" fill="freeze" attributeName="d" values="M40 -25 L0 -70 L0 -25; M40 -75 L0 -70 L0 -25" begin="5s"></animate>
+            <animate dur="1s" repeatCount="1" fill="freeze" attributeName="d" values="M0 -25 L0 -70 L0 -25" begin="9.3s"></animate>
+            <animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="0.1s" repeatCount="1" begin="9.2s" fill="freeze" />
+        </path>
+<!--        left arm-->
+        <path d="M0 -25 L0 -70 L-40 -25" fill="none" stroke="darkgray" stroke-width="7" >
+            <animate dur="1s" repeatCount="1" fill="freeze" attributeName="d" values="M0 -25 L0 -70 L0 -25" begin="9.3s"></animate>
+            <animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="0.1s" repeatCount="1" begin="9.2s"  fill="freeze"/>
+        </path>
+<!--      head-->
+        <circle cx="0" cy="-130" r="30" stroke="darkgray" stroke-width="7" fill="none" >
+            <animate dur="1s" repeatCount="1" fill="freeze" attributeName="cx" values="-30" begin="9.2s"></animate>
+            <animate dur="1s" repeatCount="1" fill="freeze" attributeName="cy" values="100" begin="9.2s"></animate>
+            <animate attributeType="CSS" attributeName="opacity" 
+           from="1" to="0" dur="0.1s" repeatCount="1" begin="9.2s"  fill="freeze"/>
+        </circle>
+
+   
+                 <div id="" class="circular-sb">
+  <p id="komentar">That is just a car.</p>
+  <div class="circle3"></div>
+  <div class="circle4"></div>
+</div>
+         </g>
+</svg>      
+                
+             <div class="trapezoid "> <h2> 2T</h2></div>
+               
+            </div>
+            
+        </div> <!-- HOME container END -->
+            <div class="row justify-content-center" id="clickRow">
+                <p id="click2Continue">Click up here to continue</p>
+            </div>
+     
+            
+
+        
+        <!-- JAVASCRIPT -->
+        <script>
+            
+            $("#click2Continue").click(function(){
+                $("#1h").css("display", "none");
+                $("#2h").removeClass("invisible");
+                $("#2h").css("display", "block");
+                $("#click2Continue").css("opacity", "0.2");
+                $("#click2Continue").css("display", "none");
+            });
+            $("#1h").click(function(){
+                $("#1h").css("display", "none");
+                $("#2h").removeClass("invisible");
+                $("#2h").css("display", "block");
+                $("#click2Continue").css("display", "none");
+            });
+            $("#2h").click(function(){
+                $("#2h").css("display", "none");
+                $("#3h").removeClass("invisible");
+                $("#3h").css("display", "block");
+            });
+        
+            $("#3h").click(function(){
+                $("#3h").css("display", "none");
+                $("#4h").removeClass("invisible");
+                $("#4h").css("display", "block");
+            });
+           
+         
+            $("#4h").click(function(){
+                $("#4h").css("display", "none");
+                $("#5h").removeClass("invisible");
+                $("#5h").css("display", "block");
+            });
+            $("#5h").click(function(){
+                $("#5h").css("display", "none");
+                $("#petrolheadTypes").removeClass("invisible");
+                $("#tuner").removeClass("invisible");
+                
+            });
+          
+         
+        </script>
+        <!-- JQUERY/BOOTSTRAP SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
